@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc || true",
+    "start": "node dist/app.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "@types/nodemailer": "^7.0.3",
+    "@types/pdfkit": "^0.17.3",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.76.1",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "nodemailer": "^7.0.10",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.26.1",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3"
+  }
+}
