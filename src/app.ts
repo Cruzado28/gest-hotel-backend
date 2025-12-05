@@ -16,12 +16,14 @@ dotenv.config();
 
 const app = express();
 
+// --- CAMBIO IMPORTANTE AQUÍ ---
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
-  credentials: true,
+  origin: '*', // Deja entrar a TODOS (Vercel, Postman, etc.)
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
+  // credentials: true <--- ESTO LO QUITAMOS porque choca con el '*'
 }));
+// ------------------------------
 
 app.use(helmet({
   crossOriginEmbedderPolicy: false,
